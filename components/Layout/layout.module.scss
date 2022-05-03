@@ -1,0 +1,56 @@
+ 
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.main {
+  width: 90%;
+  margin: auto;
+  font-size: 1.2em;
+  font-weight: 300;
+  flex-grow: 1;
+}
+
+/*----------------/
+ /- Media Queries -/
+/----------------*/
+
+/* Desktop Monitors */
+@media screen and (max-width: 1200px) {
+  .main {
+    width: 100%;
+
+  }
+}
+
+/* Laptops */
+@media (min-width: 992px) {
+  
+
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  
+
+}
+
+/* Phones */
+@media screen and (max-width: 576px) {
+
+  
+  .main {
+    width: 100%;
+    font-size: 1em;
+
+  }
+}
+
+
+
+
+ 

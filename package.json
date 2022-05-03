@@ -1,27 +1,26 @@
 {
-  "name": "portfolio-morgane-tressens",
-  "version": "1.0.0",
+  "name": "morganetressens",
+  "version": "0.1.0",
   "private": true,
-  "description": "portfolio-morgane-tressens",
-  "author": "MorganeT84",
-  "keywords": [
-    "gatsby"
-  ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "gatsby": "^4.5.4",
-    "gatsby-plugin-image": "^2.5.2",
-    "gatsby-plugin-sass": "^5.5.0",
-    "gatsby-plugin-sharp": "^4.5.2",
-    "gatsby-source-filesystem": "^4.5.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "sass": "^1.49.0"
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "bootstrap": "^5.1.3",
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-bootstrap": "^2.3.1",
+    "react-dom": "18.1.0",
+    "sass": "^1.51.0"
+  },
+  "devDependencies": {
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.6"
   }
 }

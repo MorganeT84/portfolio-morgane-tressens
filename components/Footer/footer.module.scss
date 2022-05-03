@@ -1,0 +1,82 @@
+.navbottom {
+  width: 100%;
+  margin-top: 5em;
+  color: #a17715;
+
+  a {
+    color: #a17715;
+    text-decoration: none;
+
+  }
+
+  .info_andco {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+
+    .social_media {
+      display: flex;
+      width: 60px !important;
+      height: 60px !important;
+      padding: 0.5em;
+      margin: 10px 10px;
+      border-radius: 8px;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.15),
+        -3px -3px 5px -1px rgba(0, 0, 0, 0.7);
+      border: 1px solid rgba(0, 0, 0, 0);
+      transition: transform 0.5s;
+    }
+
+    .social_media svg {
+      font-size: 1.6em;
+      color: #a17715;
+      transition: transform 0.5s;
+    }
+
+    .social_media:hover {
+      box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.01);
+      transform: translateY(2px);
+    }
+
+    .social_media:hover svg {
+      transform: scale(0.9);
+    }
+
+    .social_media:hover .fa_github {
+      color: #000000;
+    }
+
+
+    .social_media:hover .fa_linkedin_in {
+      color: #3b5998;
+    } 
+  }
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .navbottom {
+    .link_info {
+      display: none;
+    }
+
+    .social_media {
+      a {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
