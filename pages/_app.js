@@ -7,7 +7,6 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Développeuse web Morgane Tressens</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
         {/*Primary Meta Tags */}
         <meta name="title" content="Développeuse web — Morgane Tressens" />
         <meta name="description" content="Développeuse web pour créer des applications via le code React Symfony" />
