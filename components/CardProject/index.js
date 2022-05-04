@@ -7,18 +7,21 @@ import LogoMG from '../../public/images/logoMG.jpg';
 import LogoCT from '../../public/images/logoCT.png';
 
 const CardProject = () => (
-  <Accordion>
+  <Accordion className={styles.accordion}>
     <Accordion.Item eventKey="0">
-      <Accordion.Header>
-        <div className={styles.project_title}>
-          <h2>Myas Gallery</h2>
-          <p> Une galerie d'art qui vient à vous</p>
+      <Accordion.Header >
+        <div className={styles.header}>
+          <div className={styles.project_title}>
+            <h2 className={styles.title_h2}>Myas Gallery</h2>
+            <p className={styles.title_p}> Une galerie d'art qui vient à vous</p>
+          </div>
+          <Image
+            src={LogoMG}
+            alt="Galerie d'art MYAS Gallery"
+            width='400'
+            height='200' />
         </div>
-        <Image
-          src={LogoMG}
-          alt="Galerie d'art MYAS Gallery"
-          width='400'
-          height='200' />
+
       </Accordion.Header>
       <Accordion.Body>
         <h3>Présentation</h3>
@@ -81,20 +84,22 @@ const CardProject = () => (
           <li>Bosstrap</li>
           <li>Twig</li>
         </ul>
-        <a href="https://myas-gallery-next-myasgallerydev.vercel.app/" title="site d'une galerie d'art">Visiter</a>
+        <a href="https://myas-gallery-next-myasgallerydev.vercel.app/" title="site d'une galerie d'art" className={styles.button_link}>Click pour explorer</a>
       </Accordion.Body>
     </Accordion.Item>
     <Accordion.Item eventKey="1">
       <Accordion.Header>
-        <div className={styles.project_title}>
-          <h2>Thérapeute Christine Toledo</h2>
-          <p>Transfert quantique et Pler-Mo</p>
+        <div className={styles.header}>
+          <div className={styles.project_title}>
+            <h2 className={styles.title_h2}>Thérapeute Christine Toledo</h2>
+            <p className={styles.title_p}>Transfert quantique et Pler-Mo</p>
+          </div>
+          <Image
+            src={LogoCT}
+            alt="Therapeute Christine Toledo"
+            width='200'
+            height='200' />
         </div>
-        <Image
-          src={LogoCT}
-          alt="Therapeute Christine Toledo"
-          width='200'
-          height='200' />
       </Accordion.Header>
       <Accordion.Body>
         <h3>Présentation</h3>
@@ -128,7 +133,7 @@ const CardProject = () => (
           <li>NextJs</li>
           <li>React</li>
           <li>icon fortawesome</li>
-           
+
         </ul>
 
         <h3>Technologies utilisées côté Back</h3>
@@ -138,7 +143,7 @@ const CardProject = () => (
           <li>Nodemailer &gt; pour l'envoie des données du formulaire sur l'adresse mail du client</li>
           <li>xoauth2 &gt; pour la sécurité de la boite mail gmail</li>
         </ul>
-        <a href="https://therapeutechristinetoledo.vercel.app/" title="site d'une galerie d'art">Visiter</a>
+        <a href="https://therapeutechristinetoledo.vercel.app/" title="site d'une galerie d'art" className={styles.button_link}>Visiter</a>
       </Accordion.Body>
     </Accordion.Item>
   </Accordion>

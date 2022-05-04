@@ -11,6 +11,7 @@ import LogoMT from '../../public/images/logo-mt.png';
 const Home = () => (
 
   <div className={styles.home_page}>
+
     <div className={styles.illustration}>
       <Image
         src={LogoMT}
@@ -24,6 +25,8 @@ const Home = () => (
         height='450'
       />
     </div>
+    <h1>Développeuse Web - Morgane Tressens</h1>
+    <p>Désireuse de développer constamment mes compétences pour assurer mon évolution professionnelle, je suis prête  à participer aux développement de vos projets.</p>
     <div >
       <ul className={styles.navigation}>
         <li>

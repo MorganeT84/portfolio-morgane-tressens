@@ -4,3 +4,16 @@
  
 @use '../styles/_reset.css';
 
+body {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: black;
+
+  h1 {
+    font-size: 3em;
+    font-family: 'Economica';
+    text-align: center;
+    padding: 0.5em;
+  }
+
+}

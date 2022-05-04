@@ -16,6 +16,7 @@ const TechnoPage = () => {
       </Head>
       <Layout>
         <Header />
+        <h1>Les technologies maîtrisées</h1>
         <CardTech dataTechno={data} />
       </Layout>
 

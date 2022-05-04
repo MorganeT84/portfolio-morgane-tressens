@@ -19,7 +19,7 @@ const CardTech = ({ dataTechno }) => {
               width='200'
               height='200'
             />
-            <Card.Body>
+            <Card.Body className={styles.card_body}>
               <Card.Title>{techno.name}</Card.Title>
               <Card.Text>
                 {techno.text}

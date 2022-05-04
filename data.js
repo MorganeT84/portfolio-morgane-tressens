@@ -58,6 +58,13 @@ const techno = [
   },
   {
     id: 9,
+    name: "Nodejs",
+    text: "mise en place de nodemailer",
+    photoUrl: "/images/techno/nodejs.png",
+    level: 10,
+  },
+  {
+    id: 10,
     name: "GitHub",
     text: "Versionning",
     photoUrl: "/images/techno/github.png",

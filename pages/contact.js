@@ -13,7 +13,7 @@ const ContactPage = () => {
       </Head>
       <Layout>
         <Header />
-        <h1>page contact</h1>
+        <h1>Contactez-moi</h1>
       </Layout>
 
     </>

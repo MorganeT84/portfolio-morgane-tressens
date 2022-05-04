@@ -4,7 +4,7 @@ import Layout from "../components/Layout/layout";
 import Header from '../components/Header/index';
 
 // markup
-const CvPage = () => {
+const ProfilPage = () => {
   return (
     <>
       <Head>
@@ -13,7 +13,7 @@ const CvPage = () => {
       </Head>
       <Layout>
         <Header />
-        <h1>page CV</h1>
+        <h1>Mon profil</h1>
 
       </Layout>
 
@@ -21,4 +21,4 @@ const CvPage = () => {
   )
 }
 
-export default CvPage;
+export default ProfilPage;
