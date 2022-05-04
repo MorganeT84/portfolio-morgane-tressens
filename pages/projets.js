@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import Layout from "../components/Layout/layout";
 import Header from "../components/Header";
+import CardProject from "../components/CardProject";
 
 
 // markup
@@ -14,21 +15,8 @@ const ProjetsPage = () => {
       </Head>
       <Layout>
       <Header />
-        <h1>page Projets</h1>
-        <ul>
-          <li>
-            <h2>Myas Gallery</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <a href="https://myas-gallery-next-myasgallerydev.vercel.app/" title="site d'une galerie d'art">Visiter</a>
-          </li>
-
-          <li>
-            <h2>Thérapeute Christine Toledo</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <a href="https://therapeutechristinetoledo.vercel.app/" title="site d'une galerie d'art">Visiter</a>
-          </li>
-        </ul>
-
+      <h1>Projets réalisés</h1>
+        <CardProject />
       </Layout>
 
     </>

@@ -1,0 +1,10 @@
+.list_techno {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .card_techno {
+    margin: 1em;
+  }
+}
