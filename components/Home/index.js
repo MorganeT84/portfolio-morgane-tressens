@@ -26,7 +26,7 @@ const Home = () => (
       />
     </div>
     <h1>Développeuse Web - Morgane Tressens</h1>
-    <p>Désireuse de développer constamment mes compétences pour assurer mon évolution professionnelle, je suis prête  à participer aux développement de vos projets.</p>
+    <p>Désireuse de développer constamment mes compétences pour assurer mon évolution professionnelle, je suis prête  à participer à la réalisation de vos projets.</p>
     <div >
       <ul className={styles.navigation}>
         <li>
