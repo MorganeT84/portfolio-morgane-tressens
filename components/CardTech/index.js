@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styles from './cardTech.module.scss';
 
 import Image from 'next/image';
-import { Card } from 'react-bootstrap';
+import { Card, ProgressBar } from 'react-bootstrap';
 
 import LogoMG from '../../public/images/logoMG.jpg';
 
@@ -25,6 +25,7 @@ const CardTech = ({ dataTechno }) => {
                 {techno.text}
                 {techno.pictureUrl}
               </Card.Text>
+              <ProgressBar animated now={techno.level} />
             </Card.Body>
           </Card>
         ))
