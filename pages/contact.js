@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import Layout from "../components/Layout/layout";
 import Header from '../components/Header/index';
+import Contact from "../components/Contact";
 
 // markup
 const ContactPage = () => {
@@ -13,7 +14,8 @@ const ContactPage = () => {
       </Head>
       <Layout>
         <Header />
-        <h1>Contactez-moi</h1>
+        
+        <Contact />
       </Layout>
 
     </>

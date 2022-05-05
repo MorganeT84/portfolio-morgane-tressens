@@ -1,0 +1,148 @@
+.container {
+  background-color: #F0F0F0;
+  width: 60%;
+  margin: 20px auto;
+
+
+  .title {
+    font-family: 'Economica', sans-serif;
+
+    background-color: red;
+    padding: 20px 20px 30px 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.6)), url("/images/ordi.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    color: white;
+
+    h1 {
+      letter-spacing: 2px;
+    }
+
+    .contact_info {
+
+      .adress {
+        font-size: 1.8em;
+      }
+      .phone {
+        margin-bottom: 1.5em;
+      }
+
+      a {
+        font-size: 1.3em;
+        text-decoration: none;
+        color: #F0F0F0;
+        background: linear-gradient(to left bottom, #f4ec5f, #465560);
+        padding: 0.5em 1em;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 0.15),
+          -2px -2px 4px -1px rgba(255, 255, 255, 0.7);
+        transition: transform 0.5s;
+
+        &:hover {
+          box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+            inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+            -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+            0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+          border: 1px solid rgba(0, 0, 0, 0.01);
+          transform: translateY(2px);
+        }
+      }
+    }
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding: 20px
+  }
+
+  .form_field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    height: 2.4em;
+    font-size: 1em;
+    padding-left: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    border: 2px solid rgba(98, 147, 173, 0.5);
+  }
+
+  label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+
+  textarea {
+    resize: none;
+    font-size: 1em;
+    padding: 6px 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+  }
+
+  textarea:focus {
+    border: 2px solid rgba(98, 147, 173, 0.5);
+  }
+
+  button {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+    font-family: 'Economica', sans-serif;
+
+    border-radius: 6px;
+    border: none;
+    color: black;
+    background: linear-gradient(to left bottom, #f4ec5f, #f0f4f7);
+    cursor: pointer;
+    box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.15),
+      -3px -3px 5px -1px rgba(255, 255, 255, 0.7);
+    transition: transform 0.5s;
+
+
+    &:hover {
+      color: #465560;
+      box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.01);
+      transform: translateY(2px);
+    }
+  }
+
+  input[type="submit"] {
+    padding: 6px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #000;
+    color: white;
+  }
+
+  @media (max-width:415px) {
+    .container {
+      background-color: #F0F0F0;
+      width: 100%;
+      margin: 20px auto;
+    }
+  }
+}
