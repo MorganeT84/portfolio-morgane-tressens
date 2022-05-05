@@ -36,7 +36,7 @@ const Home = () => (
         </li>
         <li>
           <Link href="/techno" passHref>
-            <a className={styles.link} title='page des technologies maîtrisées' >Technologies</a>
+            <a className={styles.link} title='page des technologies explorées' >Technologies</a>
           </Link>
         </li>
         <li>

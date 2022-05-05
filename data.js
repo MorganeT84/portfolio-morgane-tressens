@@ -4,7 +4,7 @@ const techno = [
     name: "HTML5",
     text: "intégration, référencement, accessibilité",
     photoUrl: "/images/techno/html5.png",
-    level: 75,
+    level: 70,
     
   },
   {
@@ -12,7 +12,7 @@ const techno = [
     name: "CSS/SCSS",
     text: "mise en page",
     photoUrl: "/images/techno/sass.png",
-    level: 60,
+    level: 50,
   },
   {
     id: 3,
@@ -26,35 +26,35 @@ const techno = [
     name: "REACT",
     text: "Bibliothèque javascript, jsx ....",
     photoUrl: "/images/techno/react.png",
-    level: 70,
+    level: 60,
   },
   {
     id: 5,
     name: "NextJs",
     text: "Framework React server side rendering",
     photoUrl: "/images/techno/nextjs.png",
-    level: 70,
+    level: 60,
   },
   {
     id: 6,
     name: "PHP",
     text: "POO, Design Patter, MVC",
     photoUrl: "/images/techno/php.png",
-    level: 60,
+    level: 50,
   },
   {
     id: 7,
     name: "Symfony",
     text: "Framework PHP, Doctrine, Twig",
     photoUrl: "/images/techno/symfony.png",
-    level: 40,
+    level: 30,
   },
   {
     id: 8,
     name: "MySQL",
     text: "Gestion de bases de données relationnelles, requêtes SQL",
     photoUrl: "/images/techno/mysql.png",
-    level: 60,
+    level: 50,
   },
   {
     id: 9,
@@ -65,10 +65,24 @@ const techno = [
   },
   {
     id: 10,
+    name: "SEO",
+    text: "Référencement, métadonnées, sitemap, robot.txt",
+    photoUrl: "/images/techno/seo.png",
+    level: 15,
+  },
+  {
+    id: 11,
     name: "GitHub",
     text: "Versionning",
     photoUrl: "/images/techno/github.png",
-    level: 80,
+    level: 60,
+  },
+  {
+    id: 12,
+    name: "Opquast",
+    text: "Maîtrise de la qualité en projet web, bonne pratique et accessibilité",
+    photoUrl: "/images/techno/opquast.png",
+    level: 79.5,
   }
 ]
 

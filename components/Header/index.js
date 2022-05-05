@@ -34,7 +34,7 @@ const Header = () => {
               <a className={router.pathname == "/projets" ? styles['active'] : styles['link']} title='page des projets réalisés'>Projets réalisés</a>
             </Link>
             <Link href="/techno" passHref>
-              <a className={router.pathname == "/techno" ? styles['active'] : styles['link']} title='page des technologies maîtrisées' >Technologies</a>
+              <a className={router.pathname == "/techno" ? styles['active'] : styles['link']} title='page des technologies explorées' >Technologies</a>
             </Link>
             <Link href="/profil" passHref>
               <a className={router.pathname == "/profil" ? styles['active'] : styles['link']} title='page du curiculum vitae' >Profil</a>
