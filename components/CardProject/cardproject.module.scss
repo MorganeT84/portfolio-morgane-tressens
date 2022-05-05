@@ -2,7 +2,11 @@
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  font-size: 1.2em;
 
+  /*--------------------/
+ /- en-tete-/
+/---------------------*/
   .header {
     width: 100%;
     display: flex;
@@ -20,7 +24,7 @@
       }
     }
 
-    .project_title { 
+    .project_title {
       font-family: 'Economica', sans-serif;
 
       .title_h2 {
@@ -36,23 +40,57 @@
     }
   }
 
+  /*--------------------/
+ /- description project-/
+/---------------------*/
+  .project_description {
+    padding: 1em;
+
+    h3 {
+      font-size: 1.5em;
+    }
+
+
+    ul {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+
+      .title_li {
+        //font-size: 1.5em;
+        font-style: oblique;
+        list-style: square;
+
+        li {
+          font-style: normal;
+
+        }
+      }
+
+    }
+  }
+
   /*---------------------------------/
  /- button redirection link extern-/
 /--------------------------------*/
   .button_link {
-    text-decoration: none;
-    color: #a17715;
+   text-decoration: none;
+    font-size: 2em;
     font-family: 'Economica', sans-serif;
-    font-size: 1.5em;
-    padding: 0.5em 1em;
-    margin-left: 5em;
-    margin-right: auto;
+ 
+    padding: 0.1em 0.8em;
+    border-radius: 6px;
+    border: none;
+    color: black;
+    background: linear-gradient(to left bottom, #f4ec5f, #f0f4f7);
+    cursor: pointer;
     box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.15),
-      -3px -3px 5px -1px rgba(0, 0, 0, 0.7);
-    border: 1px solid rgba(0, 0, 0, 0);
+      -3px -3px 5px -1px rgba(255, 255, 255, 0.7);
     transition: transform 0.5s;
 
+
     &:hover {
+      color: #465560;
       box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
         inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
         -0.5px -0.5px 0px rgba(255, 255, 255, 1),
