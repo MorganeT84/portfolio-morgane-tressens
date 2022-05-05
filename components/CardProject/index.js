@@ -90,7 +90,7 @@ const CardProject = () => (
             <li className={styles.title_li}>Twig</li>
           </ul>
         </div>
-        <a href="https://myas-gallery-next-myasgallerydev.vercel.app/" title="site d'une galerie d'art" className={styles.button_link}>Click pour explorer</a>
+        <a href="https://myas-gallery-next-myasgallerydev.vercel.app/" title="site d'une galerie d'art" className={styles.button_link}>Visiter</a>
       </Accordion.Body>
     </Accordion.Item>
     <Accordion.Item eventKey="1">
@@ -154,7 +154,7 @@ const CardProject = () => (
             <li className={styles.title_li}>xoauth2 &gt; pour la sécurité de la boite mail gmail</li>
           </ul>
         </div>
-        <a href="https://therapeutechristinetoledo.vercel.app/" title="site d'une galerie d'art" className={styles.button_link}>Click pour explorer</a>
+        <a href="https://therapeutechristinetoledo.vercel.app/" title="site d'une galerie d'art" className={styles.button_link}>Visiter</a>
       </Accordion.Body>
     </Accordion.Item>
   </Accordion>

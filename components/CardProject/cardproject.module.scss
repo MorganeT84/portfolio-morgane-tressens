@@ -57,7 +57,6 @@
       margin-right: auto;
 
       .title_li {
-        //font-size: 1.5em;
         font-style: oblique;
         list-style: square;
 
@@ -74,10 +73,10 @@
  /- button redirection link extern-/
 /--------------------------------*/
   .button_link {
-   text-decoration: none;
+    text-decoration: none;
     font-size: 2em;
     font-family: 'Economica', sans-serif;
- 
+
     padding: 0.1em 0.8em;
     border-radius: 6px;
     border: none;
@@ -123,6 +122,8 @@
 /* Phones */
 @media screen and (max-width: 576px) {
   .accordion {
+    font-size: 0.75em;
+
     .header {
       width: 80%;
 
@@ -135,6 +136,12 @@
         .title_p {
           font-size: 0.75em;
         }
+      }
+    }
+
+    .project_description {
+      ul {
+        width: 100%;
       }
     }
   }
