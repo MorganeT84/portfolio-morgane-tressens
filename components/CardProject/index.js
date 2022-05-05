@@ -15,11 +15,15 @@ const CardProject = () => (
             <h2 className={styles.title_h2}>Myas Gallery</h2>
             <p className={styles.title_p}> Une galerie d'art qui vient à vous</p>
           </div>
-          <Image
-            src={LogoMG}
-            alt="Galerie d'art MYAS Gallery"
-            width='400'
-            height='200' />
+          <div className={styles.logo_project}>
+            <Image
+              src={LogoMG}
+              alt="Galerie d'art MYAS Gallery"
+              height={700}
+              objectFit="contain"
+              sizes='50vw'
+            />
+          </div>
         </div>
 
       </Accordion.Header>
@@ -91,14 +95,18 @@ const CardProject = () => (
       <Accordion.Header>
         <div className={styles.header}>
           <div className={styles.project_title}>
-            <h2 className={styles.title_h2}>Thérapeute<br/>Christine Toledo</h2>
+            <h2 className={styles.title_h2}>Thérapeute<br />Christine Toledo</h2>
             <p className={styles.title_p}>Transfert quantique et Pler-Mo</p>
           </div>
-          <Image
-            src={LogoCT}
-            alt="Therapeute Christine Toledo"
-            width='200'
-            height='200' />
+          <div className={styles.logo_project}>
+            <Image
+              src={LogoCT}
+              alt="Therapeute Christine Toledo"
+              height={400}
+              objectFit="contain"
+              sizes='50vw'
+            />
+          </div>
         </div>
       </Accordion.Header>
       <Accordion.Body>
