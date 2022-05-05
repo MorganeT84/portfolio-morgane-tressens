@@ -46,9 +46,9 @@ const Profil = () => (
         <p>
           suivi de la formation en ligne
           obtention du certif 795 points 10/02/2022
-          <div className={styles.opquast}>
+          <span className={styles.opquast}>
             <a download href="/download/morganetressens-opquast.pdf" className={styles.pdffile} > Télécharger </a>
-          </div>
+          </span>
         </p>
       </div>
     </div>
