@@ -1,7 +1,8 @@
-.container {
+.container_form {
   background-color: #F0F0F0;
   width: 60%;
-  margin: 20px auto;
+  margin-left: auto;
+  margin-right: auto;
 
 
   .title {
@@ -100,12 +101,13 @@
   }
 
   button {
-    width: 25%;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
     font-size: 2em;
     font-family: 'Economica', sans-serif;
-
+ 
+    padding: 0.1em 0.8em;
     border-radius: 6px;
     border: none;
     color: black;
@@ -125,23 +127,25 @@
       border: 1px solid rgba(0, 0, 0, 0.01);
       transform: translateY(2px);
     }
-  }
+  } 
 
-  input[type="submit"] {
-    padding: 6px 15px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    background-color: #000;
-    color: white;
-  }
+  
+}
 
-  @media (max-width:415px) {
-    .container {
-      background-color: #F0F0F0;
-      width: 100%;
+/* Tablets */
+@media (min-width: 768px) {
+  
+
+}
+
+/* Phones */
+@media screen and (max-width: 576px) {
+
+ 
+}
+@media (max-width:415px) {
+    .container_form { 
+      width: 95%;
       margin: 20px auto;
     }
   }
-}

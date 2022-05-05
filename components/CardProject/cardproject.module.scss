@@ -2,7 +2,9 @@
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+
   .header {
+    width: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -13,6 +15,8 @@
 
       .title_h2 {
         font-size: 2.5em;
+        white-space: nowrap;
+
       }
 
       .title_p {
@@ -22,7 +26,7 @@
     }
   }
 
- /*---------------------------------/
+  /*---------------------------------/
  /- button redirection link extern-/
 /--------------------------------*/
   .button_link {
@@ -34,20 +38,54 @@
     margin-left: 5em;
     margin-right: auto;
     box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.15),
-        -3px -3px 5px -1px rgba(0, 0, 0, 0.7);
-      border: 1px solid rgba(0, 0, 0, 0);
-      transition: transform 0.5s;
-      &:hover {
-        box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+      -3px -3px 5px -1px rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: transform 0.5s;
+
+    &:hover {
+      box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
         inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
         -0.5px -0.5px 0px rgba(255, 255, 255, 1),
         0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
       border: 1px solid rgba(0, 0, 0, 0.01);
       transform: translateY(2px);
-      }
+    }
   }
+}
 
-  
+/* Tablets */
+@media (max-width: 768px) {
+  .accordion {
+    .header {
 
-  
+      .project_title {
+
+        .title_h2 {
+          font-size: 1.8em;
+        }
+
+        .title_p {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+/* Phones */
+@media screen and (max-width: 576px) {
+  .accordion {
+    .header {
+      width: 80%;
+      .project_title {
+
+        .title_h2 {
+          font-size: 1.2em;
+        } 
+        .title_p {
+          font-size: 0.75em;
+        }
+      }
+    }
+  }
 }

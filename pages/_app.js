@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import '../styles/globals.scss'
 
+import SSRProvider from 'react-bootstrap/SSRProvider';
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -10,7 +12,7 @@ function MyApp({ Component, pageProps }) {
         {/*Primary Meta Tags */}
         <meta name="title" content="Développeuse web — Morgane Tressens" />
         <meta name="description" content="Développeuse web pour créer des applications via le code React Symfony" />
-         
+
         <link rel="author" href='Morgane Tressens' />
         <link rel='publisher' href='##' />
         <link rel="apple-touch-icon" sizes="180x180" href="https://portfolio-morgane-tressens.vercel.app/images/favicon/apple-touch-icon.png" />
@@ -39,7 +41,9 @@ function MyApp({ Component, pageProps }) {
         {/* canonical link */}
         <link rel="canonical" href="https://tressensmorgane.fr" />
       </Head>
-      <Component {...pageProps} />
+      <SSRProvider>
+        <Component {...pageProps} />
+      </SSRProvider>
     </>
 
   )

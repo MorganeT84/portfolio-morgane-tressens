@@ -1,10 +1,24 @@
 .navbar_burger {
+
+  .brand {
+    width: 40%;
+
+    img {
+      object-fit: contain;
+      width: 100% !important;
+      height: max-content;
+    }
+  }
+
   button {
     background-color: #f4ec5f;
   }
 
   .link,
   .active {
+    width: auto;
+    white-space: nowrap;
+
     margin: 0.2em;
     text-align: center;
     padding: 0.2em 0.4em;

@@ -19,8 +19,12 @@ const Header = () => {
             <Image
               src={LogoMT}
               alt="Morgane Tressens développeuse web"
-              width='400'
-              height='400' />
+              layout="responsive"
+              height={500}
+              objectFit="contain"
+              priority={true}
+              sizes='50vw'
+            />
           </a>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

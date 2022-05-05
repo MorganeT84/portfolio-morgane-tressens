@@ -91,7 +91,7 @@ const CardProject = () => (
       <Accordion.Header>
         <div className={styles.header}>
           <div className={styles.project_title}>
-            <h2 className={styles.title_h2}>Thérapeute Christine Toledo</h2>
+            <h2 className={styles.title_h2}>Thérapeute<br/>Christine Toledo</h2>
             <p className={styles.title_p}>Transfert quantique et Pler-Mo</p>
           </div>
           <Image

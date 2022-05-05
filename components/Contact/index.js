@@ -6,7 +6,7 @@ import { Row, Col, FloatingLabel, Form } from 'react-bootstrap';
 
 const Contact = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container_form}>
       <div className={styles.title}>
         <h1>Contactez-moi</h1>
         <div className={styles.contact_info}>

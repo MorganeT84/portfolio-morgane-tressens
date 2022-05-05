@@ -40,7 +40,7 @@ const Home = () => (
           </Link>
         </li>
         <li>
-          <Link href="/cv" passHref>
+          <Link href="/profil" passHref>
             <a className={styles.link} title='page du curiculum vitae' >Profil</a>
           </Link>
         </li>

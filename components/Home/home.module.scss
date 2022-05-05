@@ -51,8 +51,26 @@
         }
       }
     }
-
-
-
   }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  
+.home_page {
+  h1 {
+    font-size: 1.8em;
+  }
+  p {
+    width: 90%;
+    font-size: 1.2em;
+  }
+  
+}
+}
+
+/* Phones */
+@media screen and (max-width: 576px) {
+
+   
 }
