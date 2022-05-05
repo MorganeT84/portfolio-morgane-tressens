@@ -3,7 +3,14 @@ import styles from './profil.module.scss';
 
 const Profil = () => (
   <div className={styles.profil}>
-   <a download href="/download/morganetressens-cv.pdf" className={styles.pdffile} > Télécharger mon C.V. </a>
+   <div className={styles.bloc}>
+        <h2> Développeuse web fullstack</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a download href="/download/morganetressens-cv.pdf" className={styles.pdffile} > Télécharger mon C.V. </a>
+      </div>
+    
     <div className={styles.parcours}>
       <div className={styles.bloc}>
         <h2> Une formation</h2>
@@ -15,9 +22,9 @@ const Profil = () => (
       <div className={styles.bloc}>
         <h2> Softskill</h2>
         <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
-      </div> 
+      </div>
       <div className={styles.bloc}>
         <h3>Mes compétences</h3>
         <p>
@@ -38,27 +45,28 @@ const Profil = () => (
         <p>
           Développer la partie back-end d’une application web ou web mobile
         </p>
-        <h3>React</h3>
+        <h4>React</h4>
         <p>
           spé choisi
         </p>
-        <h3>Symfony</h3>
+        <h4>Symfony</h4>
         <p>
           en solo
         </p>
+        <div className={styles.bloc}>
+          <h4>Opquast</h4>
+          <p>
+            suivi de la formation en ligne
+            obtention du certif 795 points 10/02/2022
+            <span className={styles.opquast}>
+              <a download href="/download/morganetressens-opquast.pdf" className={styles.pdffile} >Télécharger</a>
+            </span>
+          </p>
+        </div>
       </div>
-      <div className={styles.bloc}>
-        <h3>Opquast</h3>
-        <p>
-          suivi de la formation en ligne
-          obtention du certif 795 points 10/02/2022
-          <span className={styles.opquast}>
-            <a download href="/download/morganetressens-opquast.pdf" className={styles.pdffile} > Télécharger </a>
-          </span>
-        </p>
-      </div>
+
     </div>
-   
+
   </div>
 );
 

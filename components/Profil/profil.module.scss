@@ -25,31 +25,26 @@
       transform: translateY(2px);
     }
   }
+ 
+  .bloc {
 
-  .parcours {
-    margin-bottom: 3em;
+    border: #f4ec5f 1px solid;
+    margin: 1em;
+    padding: 1em;
 
-    .bloc {
-
-      border: #f4ec5f 1px solid;
-      margin: 1em;
-      padding: 1em;
-
-      p {
-        margin-left: 1em;
-      }
-
-      .opquast {
-        display: flex;
-        flex-direction: column;
-        align-self: flex-end;
-
-        a {  
-          align-self: flex-end;
-        }
-
-      }
+    p {
+      margin-left: 1em;
     }
 
+    .opquast {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-end;
+
+      a {  
+        align-self: flex-end;
+      }
+
+    }
   }
 }
