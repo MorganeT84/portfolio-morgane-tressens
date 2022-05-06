@@ -2,10 +2,7 @@ import PropTypes from 'prop-types';
 import styles from './cardTech.module.scss';
 
 import Image from 'next/image';
-import { Card, ProgressBar } from 'react-bootstrap';
-
-import LogoMG from '../../public/images/logoMG.jpg';
-
+import { Card } from 'react-bootstrap';
 
 const CardTech = ({ dataTechno }) => { 
   return (
@@ -15,7 +12,7 @@ const CardTech = ({ dataTechno }) => {
           <Card style={{ width: '18rem' }} key={techno.id} className={styles.card_techno}>
             <Image
               src={techno.photoUrl}
-              alt="Galerie d'art MYAS Gallery"
+              alt={techno.name}
               width='200'
               height='200'
             />
@@ -24,8 +21,7 @@ const CardTech = ({ dataTechno }) => {
               <Card.Text>
                 {techno.text}
                 {techno.pictureUrl}
-              </Card.Text>
-              <ProgressBar animated now={techno.level} />
+              </Card.Text> 
             </Card.Body>
           </Card>
         ))

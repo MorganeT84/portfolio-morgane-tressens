@@ -67,6 +67,10 @@
     flex-direction: column;
   }
 
+  .form_field_field {
+    display: none;
+  }
+
   input[type="text"],
   input[type="email"] {
     height: 2.4em;
