@@ -2,7 +2,7 @@
 
 require('dotenv').config();
 
-export default function Contact(req, res) {
+export default function (req, res) {
 
   let nodemailer = require('nodemailer');
 
@@ -37,5 +37,5 @@ export default function Contact(req, res) {
     else
       console.log(info)
   })
-  res.status(200)
+  res.status(200).json({message:'message envoyé'})
 } 

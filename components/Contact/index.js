@@ -45,15 +45,16 @@ const Contact = () => {
         requestOptions,
       )
         .then((res) => {
-          console.log('Response received')
+          console.log('Response received');
           if (res.status === 200) {
-            console.log('Response succeeded!')
-            setSubmitted(true)
-            setFormData(res)
+            console.log('Response succeeded!');
+            setSubmitted(true);
+            setFormData(res);
           }
         })
         .catch((error) => {
           console.warn(error);
+          console.log('catch error');
         });
     }
 
