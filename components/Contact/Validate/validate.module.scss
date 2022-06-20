@@ -1,8 +1,11 @@
  
 .validate_post {
   text-align: center;
-  height: 100%;
+  font-size: 1.8em;
   padding: 1em; 
   background-color: white;
+  span {
+    font-size: 2em;
+  }
  
 }

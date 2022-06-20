@@ -57,7 +57,7 @@ const techno = [
   {
     id: 10,
     name: "SEO",
-    text: "Référencement, métadonnées, sitemap, robot.txt",
+    text: "Référencement, métadonnées, sitemap, robots.txt",
     photoUrl: "/images/techno/seo.png",
   },
   {

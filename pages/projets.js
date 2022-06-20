@@ -4,6 +4,7 @@ import Layout from "../components/Layout/layout";
 import Header from "../components/Header";
 import CardProject from "../components/CardProject";
 
+import dataProject from "../data/project";
 
 // markup
 const ProjetsPage = () => {
@@ -16,7 +17,7 @@ const ProjetsPage = () => {
       <Layout>
         <Header />
         <h1>Projets réalisés</h1>
-        <CardProject />
+        <CardProject dataProject={dataProject} />
       </Layout>
 
     </>

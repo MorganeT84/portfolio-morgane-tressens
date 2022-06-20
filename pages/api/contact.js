@@ -3,21 +3,20 @@
 require('dotenv').config();
 
 export default function Contact(req, res) {
-  
- 
-  let nodemailer = require('nodemailer');
 
+  let nodemailer = require('nodemailer');
 
   const transporter = nodemailer.createTransport({
     port: 465,
     host: "smtp.gmail.com",
     auth: {
       type: "login",
-      user: process.env.GMAIL_EMAIL,
-      pass: process.env.GMAIL_PASS,
+      user: process.env.CLIENT_EMAIL,
+      pass: process.env.CLIENT_PASS_APP,
     },
     secure: true,
   });
+
   const mailData = {
     from: 'morganetressens@gmail.com',
     to: 'morganetressens@gmail.com',
@@ -29,7 +28,7 @@ export default function Contact(req, res) {
     <p>son message :<br/> ${req.body.message} </p>
     <p>son mail : ${req.body.email}</p>
     </div>`
-    
+
   }
 
   transporter.sendMail(mailData, function (err, info) {

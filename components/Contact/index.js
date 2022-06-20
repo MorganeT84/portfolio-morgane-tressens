@@ -19,6 +19,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log('Sending');
 
     const dataContact = {
       pseudo: formData.pseudo,
@@ -31,17 +32,29 @@ const Contact = () => {
     // condition to deceive spambots
     let x = document.forms["contact"]["pseudo"].value;
 
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Accept': 'application/json, text/plain, */*', 'Content-Type': 'application/json' },
+      body: JSON.stringify(dataContact)
+    };
 
     if (x == "" || x == null) {
-      fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json, text/plain, */*',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(dataContact),
-      })
-      return setSubmitted(true);
+      fetch(
+        // URL de l'API
+        '/api/contact',
+        requestOptions,
+      )
+        .then((res) => {
+          console.log('Response received')
+          if (res.status === 200) {
+            console.log('Response succeeded!')
+            setSubmitted(true)
+            setFormData(res)
+          }
+        })
+        .catch((error) => {
+          console.warn(error);
+        });
     }
 
   };
@@ -67,23 +80,23 @@ const Contact = () => {
         : (
           <form name='contact' onSubmit={handleSubmit}>
             <div className={styles.form_field_field}>
-              <label for="pseudo">Ne pas remplir</label>
+              <label htmlFor="pseudo">Ne pas remplir</label>
               <input type="text" value={formData.pseudo || ''} onChange={(e) => setFormData({ ...formData, pseudo: e.target.value })} className={styles.fullname} name="pseudo" placeholder="Ne pas remplir" autoComplete='false' />
             </div>
             <div className={styles.form_field}>
-              <label for="name">Votre Nom*</label>
-              <input type="text" value={formData.name || ''} onChange={(e) => setFormData({ ...formData, name: e.target.value })} className={styles.fullname} name="name" placeholder="Nom" required autofoucus />
+              <label htmlFor="name">Votre Nom*</label>
+              <input type="text" value={formData.name || ''} onChange={(e) => setFormData({ ...formData, name: e.target.value })} className={styles.fullname} name="name" placeholder="Nom" required />
             </div>
             <div className={styles.form_field_field}>
-              <label for="email">Ne pas remplir</label>
+              <label htmlFor="email">Ne pas remplir</label>
               <input type="email" value={formData.email1 || ''} onChange={(e) => setFormData({ ...formData, email1: e.target.value })} className={styles.email} name="email1" placeholder="Ne pas remplir" autoComplete='false' />
             </div>
             <div className={styles.form_field}>
-              <label for="email">Votre email*</label>
+              <label htmlFor="email">Votre email*</label>
               <input type="email" value={formData.email || ''} onChange={(e) => setFormData({ ...formData, email: e.target.value })} className={styles.email} name="email" placeholder="nom@example.com" required />
             </div>
             <div className={styles.form_field}>
-              <label for="message">Votre message*</label>
+              <label htmlFor="message">Votre message*</label>
               <textarea type="message" value={formData.message || ''} onChange={(e) => setFormData({ ...formData, message: e.target.value })} className={styles.message} name="message" placeholder="Laissez votre message ici" required rows="4"></textarea>
             </div>
             <div className={styles.form_field}>

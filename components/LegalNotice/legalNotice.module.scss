@@ -1,0 +1,40 @@
+@use '../../styles/vars';
+
+.legal {
+  width: 95%;
+  line-height: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+
+  .detail {
+    margin: 0.5em;
+    h2 {
+      font-size: 1.7em;
+      margin: 0.5em;
+    }
+
+    .link {
+      display: flex;
+      justify-content: center;
+      margin-top: 0.5em;
+      margin-bottom: 2em;
+      font-weight: 500;
+    }
+    .link_contact { 
+      box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15),
+        -2px -2px 4px 0 rgba(255, 255, 255, 0.5);
+      display: flex;
+  
+      width: 8em;
+      height: 2em;
+      align-items: center;
+      justify-content: center;
+  
+      &:hover {
+        box-shadow: inset 2px 2px 4px 0 rgba(0, 0, 0, 0.15),
+          inset -2px -2px 4px 0 rgba(255, 255, 255, 0.5);
+      }
+  
+    }
+  }
+}

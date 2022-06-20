@@ -4,7 +4,7 @@ import Layout from "../components/Layout/layout";
 import Header from '../components/Header/index';
 import CardTech from "../components/CardTech";
 
-import data from '../data';
+import dataTechno from '../data/techno';
 
 // markup
 const TechnoPage = () => {
@@ -17,7 +17,7 @@ const TechnoPage = () => {
       <Layout>
         <Header />
         <h1>Les technologies explorées</h1>
-        <CardTech dataTechno={data} />
+        <CardTech dataTechno={dataTechno} />
       </Layout>
 
     </>
