@@ -32,10 +32,13 @@ export default function (req, res) {
   }
 
   transporter.sendMail(mailData, function (err, info) {
-    if (err)
-      console.log(err)
-    else
-      console.log(info)
+    if (err) {
+      console.log(err);
+      res.status(500).json({ error: error.message || error.toString() })
+    } else {
+      console.log(info);
+      res.status(200).json({ error: "" });
+    }
   })
-  res.status(200).json({message:'message envoyé'})
+
 } 

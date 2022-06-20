@@ -48,6 +48,7 @@ const Contact = () => {
           console.log('Response received');
           if (res.status === 200) {
             console.log('Response succeeded!');
+            console.log(res);
             setSubmitted(true);
             setFormData(res);
           }
