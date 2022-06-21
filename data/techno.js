@@ -71,6 +71,18 @@ const techno = [
     name: "Opquast",
     text: "Maîtrise de la qualité en projet web, bonne pratique et accessibilité",
     photoUrl: "/images/techno/opquast.png",
+  },
+  {
+    id: 13,
+    name: "Apache",
+    text: "serveur web",
+    photoUrl: "/images/techno/apache.png",
+  },
+  {
+    id: 14,
+    name: "Nginx",
+    text: "serveur web",
+    photoUrl: "/images/techno/nginx.png",
   }
 ]
 

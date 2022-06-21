@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import CardProject from "../components/CardProject";
 
 import dataProject from "../data/project";
+ 
 
 // markup
 const ProjetsPage = () => {

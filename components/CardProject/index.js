@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-
 import styles from './cardproject.module.scss';
 
 import Image from 'next/image';
 import { Accordion } from 'react-bootstrap';
+
 
 const CardProject = ({ dataProject }) => {
 
@@ -35,8 +35,7 @@ const CardProject = ({ dataProject }) => {
             <Accordion.Body>
               <article className={styles.project_description}>
                 <h3>Présentation</h3>
-                <p>{project.description}
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: project.description }} />
 
                 <h3>Objectifs</h3>
                 <p>{project.objectifs}</p>
@@ -67,7 +66,8 @@ const CardProject = ({ dataProject }) => {
                 {
                   project.gestion.map((orga) => (
                     <div key={orga.id} >
-                      <p>Cette application a été développée en {orga.gestion}. <br />{orga.description}</p>
+                      <p>Cette application a été développée en {orga.gestion}.</p>
+                      <p dangerouslySetInnerHTML={{ __html: orga.description }} />
                     </div>
 
                   ))
@@ -76,7 +76,8 @@ const CardProject = ({ dataProject }) => {
                 {
                   project.deployement.map((orga) => (
                     <div key={orga.id} >
-                      <p>Ce site a été déployé via un hébergement {orga.type} chez {orga.name}. <br /> {orga.description}</p>
+                      <p>Ce site a été déployé via un hébergement {orga.type} chez {orga.name}.</p>
+                      <p dangerouslySetInnerHTML={{ __html: orga.description }} />
                     </div>
 
                   ))
@@ -100,7 +101,7 @@ CardProject.propTypes = {
       text: PropTypes.string.isRequired,
       logo: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      objecttifs: PropTypes.string.isRequired,
+      objectifs: PropTypes.string.isRequired,
       role: PropTypes.string.isRequired,
       techno_front: PropTypes.arrayOf(
         PropTypes.shape({
