@@ -25,8 +25,8 @@ const Home = () => (
         height='450'
       />
     </div>
-    <h1>Développeuse Web - Morgane Tressens</h1>
-    <p>Désireuse de développer constamment mes compétences pour assurer mon évolution professionnelle, je suis prête  à participer à la réalisation de vos projets.</p>
+    <h1>Développeuse web & mobile <br/> Morgane Tressens</h1>
+    <p>Mon intérêt pour  le design, l’architecture, l’expérience utilisateur et la programmation me pousse à me diversifier un maximum pour concevoir et réaliser des sites web du cahier des charges à la mise en ligne. Je suis prête à participer à la réalisation de vos projets.</p>
     <div >
       <ul className={styles.navigation}>
         <li>
