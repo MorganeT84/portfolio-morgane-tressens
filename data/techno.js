@@ -15,7 +15,7 @@ const techno = [
   {
     id: 3,
     name: "Javascript",
-    text: "Manipulation du DOM, Ecouteur d'évènements, Requêtes AJAX",
+    text: "Manipulation du DOM, Ecouteurs d'évènements, Requêtes AJAX",
     photoUrl: "/images/techno/javascript.png",
   },
   {
@@ -69,7 +69,7 @@ const techno = [
   {
     id: 12,
     name: "Opquast",
-    text: "Maîtrise de la qualité en projet web, bonne pratique et accessibilité",
+    text: "Maîtrise de la qualité en projet web, bonnes pratiques et accessibilité",
     photoUrl: "/images/techno/opquast.png",
   },
   {
