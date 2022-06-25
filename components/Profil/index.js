@@ -44,7 +44,7 @@ const Profil = () => (
         </p>
       </div>
       <div className={styles.bloc}>
-        <h2> Softskill</h2>
+        <h2>Soft skills</h2>
         <ul>
           <li>Communication et esprit d'équipe</li>
           <li>Esprit d'entre-aide</li>
