@@ -136,7 +136,7 @@ const techno = [
         description:"en cours ..."
       }
     ],
-    url: "https://therapeute.christinetoledo.fr/"
+    url: "https://christinetoledo.fr/"
   }
 ]
 
