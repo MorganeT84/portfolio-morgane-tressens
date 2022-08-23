@@ -84,8 +84,9 @@ const Profil = ({ file_data }) => {
             <p>
               Suivi de la formation en ligne
               obtention du certif 795 points 10/02/2022.
-              <a href="https://directory.opquast.com/fr/certificat/O0UJRH/" className={styles.pdffile} >Voir en ligne</a>
+            
             </p>
+              <a href="https://directory.opquast.com/fr/certificat/O0UJRH/" className={styles.pdffile} >Voir en ligne</a>
             <AccordionPdf file_data={file_data[1]} />
           </div>
         </div>
