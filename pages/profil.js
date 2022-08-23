@@ -6,6 +6,19 @@ import Profil from "../components/Profil";
 
 // markup
 const ProfilPage = () => {
+  const file_data = [
+    {
+      id: 0,
+      name: "Consultez mon C.V",
+      file: "/download/morganetressens-cv.pdf",
+
+    },
+    {
+      id: 1,
+      name: "Consultez ma certification",
+      file: "/download/morganetressens-opquast.pdf",
+    },
+  ]
   return (
     <>
       <Head>
@@ -15,7 +28,7 @@ const ProfilPage = () => {
       <Layout>
         <Header />
         <h1>Mon profil</h1>
-        <Profil />
+        <Profil file_data={file_data} />
       </Layout>
 
     </>
