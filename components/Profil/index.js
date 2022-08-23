@@ -38,10 +38,14 @@ const Profil = () => (
           Pour établir des requêtes HTTP en Ajax dans nos applications vers une API, nous avons appris à utiliser la bibliothèque Axios, à manipuler la bibliothèque Redux pour gérer la manipulation du DOM et son état.
         </p>
         <h3>Symfony</h3>
-        <p>
-          Fin de cette belle aventure au sein de l'école O'clock, je décide de me former sur ce framework PHP, en autonomie via les fiches récap de l'école et la documentation symfony.
-          En cours d'apprentissage...
-        </p>
+        <p>Fin de cette belle aventure au sein de l'école O'clock.<br/>
+        Je décide, quelques mois plus tard, de me former sur ce framework PHP, en autonomie via les fiches récapitulatives des notions, les challenges de l'école et la documentation Symfony.<br />
+        J’ai étudié les bases de Symfony en créant des projets avec symfony/skeleton, en manipulant les routes, les contrôleurs, les templates (Twig et Bootstrap) et les formulaires.<br/>
+        J’ai utilisé Doctrine pour la création, les associations et la manipulation de la base de données. J’ai appris à créer des fixtures pour alimenter une base en données factices avec Faker et Nelmio/alice.</p>
+        <p>Côté sécurisation d’une application, j’ai appris à mettre en place des conditions d’affichage selon le rôle de l’utilisateur connecté en passant par la création d’un utilisateur, la définition de son rôle et l’encodage du mot de passe.</p>
+        <p>J’ai mis en place la configuration de services réutilisables  et la création de commandes personnalisées pour ajouter des fonctionnalités dans la manipulation des données.</p>
+        <p>Les notions d'événements et cycles de vie permettent d’entrer en interaction avec un formulaire et pouvoir faire exécuter du code selon l’état.</p>
+        <p>Je me suis exercée sur la mise en place de tests unitaires pour un code robuste avec phpunit de symfony.</p>
       </div>
       <div className={styles.bloc}>
         <h2>Soft skills</h2>
@@ -51,9 +55,11 @@ const Profil = () => (
           <li>Patience</li>
           <li>Capacité à effectuer des recherches et formuler mon problème pour trouver des solutions</li>
           <li>Créativité</li>
-          <li>Curiosité</li>
+          <li>Force de proposition</li>
+          <li>Volontaire</li>
           <li>Adaptabilité et curiosité face à l'inconnu</li>
-          <li>Rigeur</li>
+          <li>Rigueur</li>
+          <li>Enthousiasme</li>
         </ul>
       </div>
       <div className={styles.bloc}>
@@ -70,15 +76,18 @@ const Profil = () => (
         <div className={styles.bloc}>
           <h2>Opquast</h2>
           <p>
-            suivi de la formation en ligne
-            obtention du certif 795 points 10/02/2022
+            Suivi de la formation en ligne
+            obtention du certif 795 points 10/02/2022.
             <span className={styles.opquast}>
               <a download href="/download/morganetressens-opquast.pdf" className={styles.pdffile} >Télécharger</a>
+            </span>
+            <span className={styles.opquast}>
+              <a download href="https://directory.opquast.com/fr/certificat/O0UJRH/" className={styles.pdffile} >Voir en ligne</a>
             </span>
           </p>
         </div>
       </div>
-
+      
     </div>
 
   </div>
