@@ -8,7 +8,7 @@ const Profil = ({ file_data }) => {
       <div className={styles.bloc}>
         <h2> Développeuse web fullstack</h2>
         <p>
-          Mon parcours reste atypique, je suis partie de l’animation jeune public pour ensuite réaliser une très belle expérience en tant qu’assistante vétérinaire durant 14 années me permettant d’acquérir de la compétence telles que l’organisation, l’écoute, le conseil ainsi que des qualités relationnelles.<br />Je suis passionnée par la création de projets et toutes les couches qu’elle représente; ce qui me procure la joie de travailler chaque jour avec envie, motivation et des idées en mouvements permanants.
+          Mon parcours reste atypique, je suis partie de l’animation jeune public pour ensuite réaliser une très belle expérience en tant qu’assistante vétérinaire durant 14 années me permettant d’acquérir de la compétence telles que l’organisation, l’écoute, le conseil ainsi que des qualités relationnelles.<br />Je suis passionnée par la création de projets et toutes les couches qu’elle représente; ce qui me procure la joie de travailler chaque jour avec envie, motivation et des idées en mouvements permanents.
         </p>
         <AccordionPdf file_data={file_data[0]} />
       </div>
