@@ -69,6 +69,11 @@ const techno = [
         id:2,
         gestion: "autonomie pour une deuxième version front",
         description:"Ce projet étant destiné à être déployé dans le but de promouvoir l’activité d’une galerie d’art, je me suis penchée sur son amélioration en prenant en compte les objectifs SEO et accessibilités. En effet, nous avons utilisé une bibliothèque de javascript (React) qui opère un rendu asynchrone dans le navigateur du client, de ce fait, côté serveur la page HTML est vierge donc les robots d’indexations vont ignorer mon application. Il est impératif que mon application dispose d’un rendu serveur, j’ai donc utilisé le framework NextJs qui gère le SSR (server side rendering). Je me suis servie de tous les composants React développés avec mes collaborateurs en les adaptant au framework. <br/> Ensuite j’ai effectué plusieurs recherches pour la rédaction des différentes métadonnées utiles au référencement,  j’ai aussi amélioré la structure du code en faisant attention à la structure des balises HTML. J’ai utilisé le package next-sitemap pour la génération du fichier robots.txt et des différents sitemap du site. Prochainement, j'envisage de refaire le back-end dans le but d'apporter des améliorations qui optimiseront les futures demandes de la galeriste qui s'adapteront à l'évolution de son activité."
+      },
+      {
+        id:3,
+        gestion: "autonomie pour une deuxième version back",
+        description:"En route pour la création du futur Back-office et l’API de MYAS Gallery. J’ai initialisé le projet avec symfony/skeleton dans la version 5.4 étant la version de support à long terme.<br/>Je commence par créer la base de données avec toutes les entités, leurs propriétés et la configuration de fixtures pour commencer à manipuler les données. J’attaque l’intégration statique et responsive de toutes les pages , la page d'accueil et des pages listant les artistes, les œuvres et les évènements ainsi que les pages dédiées pour un artiste, une œuvre, un événement à l'aide de Twig,  Bootstrap et un peu de CSS.Ensuite je dynamise ces pages avec les données fictives enregistrées en BDD grâce aux fonctions prévues par Twig et mes fonctions de “browse”,  “read” et “delete” de mes controllers pour chaque entitées.<br/>J’attaque le paramétrage des formulaires pour la création et la modification d’une donnée avec les fonctions “add” et “edit”. Au besoin, j’ajoute les bundles permettant la mise en place de fonctionnalités plus simplement (image, sluggification …).<br/>Je prépare des requêtes custom en DQL pour adapter les besoins pour le front et améliorer l’affichage du back-office. Par exemple, la liste des évènements doit être retournée classée par date en séparant celles déjà passées pour finir de dynamiser la page d’accueil et ainsi afficher les 3 prochaines dates.<br/>Je met en place de l’authentification avec la création de l’entité User, je déclare les différents rôles et leurs accès aux actions autorisés sur le back-office. Je mets à disposition la possibilité au super-admin seulement de consulter cette liste de collaborateurs avec la possibilité d’ajouter, modifier ou supprimer. J’ai ajouté la possibilité de réinitialiser son mot de passe.<br/>Je construis l’API REST pour que le front puisse avoir accès aux données nécessaires à son contenu. Je mets en place la récupération des données envoyées par un visiteur avec l'envoi d’un mail de confirmation à celui-ci et le compte rendu pour le galeriste. Pour finir, je sécurise cette API. Je me suis servi de Insomnia pour vérifier le bon fonctionnement de ce que j’ai mis en place."
       }
     ],
     deployement: [
@@ -137,6 +142,63 @@ const techno = [
       }
     ],
     url: "https://christinetoledo.fr/"
+  },
+  {
+    id: 3,
+    name: "Isabelle Hominal",
+    text: "Bien-être et massages",
+    logo: "/images/logo-isa.png",
+    description: "Site vitrine pour une nouvelle activité de massage ...",
+    objectifs: "En cours de réalisation du cahier des charges.",
+    role: "Cette application est libre d’accès, aucune authentification n'est nécessaire pour naviguer sur le site.",
+    techno_front: [
+      {
+        id: 1,
+        name: "HTML/JSX",
+      },
+      {
+        id: 2,
+        name: "CSS / SCSS",
+      },
+      {
+        id: 3,
+        name: "React",
+      },
+      {
+        id: 4,
+        name: "NextJs",
+      }
+    ],
+    techno_back: [
+      {
+        id: 1,
+        name: "Node > serveur pour la récupération des données du formulaire de contact",
+      },
+      {
+        id: 2,
+        name: "dotenv > utilisation des mots de passe sécurisé",
+      },
+      {
+        id: 3,
+        name: "Nodemailer > pour l'envoie des données du formulaire sur l'adresse mail du client",
+      },
+    ],
+    gestion: [
+      {
+        id: 1,
+        gestion: "autonomie",
+        description: "En cours de réalisation du cahier des charges."
+      }
+    ],
+    deployement: [
+      {
+        id: 1,
+        type: "VPS",
+        name: "Hostinger",
+        description:"à venir"
+      }
+    ],
+    url: "#"
   }
 ]
 

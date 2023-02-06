@@ -18,6 +18,11 @@ const ProfilPage = () => {
       name: "Consultez ma certification",
       file: "/download/morganetressens-opquast.pdf",
     },
+    {
+      id: 2,
+      name: "Visualisez mon Titre professionel",
+      file: "/download/titrepro5.pdf",
+    },
   ]
   return (
     <>

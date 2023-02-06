@@ -9,7 +9,7 @@ const AccordionPdf = ({file_data}) => {
   return (
     <div>
       <Accordion className={styles.file_pdf}>
-        <Accordion.Item  >
+        <Accordion.Item eventKey="0" >
           <Accordion.Header  >{file_data.name}</Accordion.Header>
           <Accordion.Body>
             <iframe src={file_data.file}/>

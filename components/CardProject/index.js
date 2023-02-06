@@ -21,7 +21,7 @@ const CardProject = ({ dataProject }) => {
                 <div className={styles.logo_project}>
                   <Image
                     src={project.logo}
-                    alt="Galerie d'art MYAS Gallery"
+                    alt={project.name}
                     layout='responsive'
                     width={500}
                     height={300}
@@ -66,7 +66,7 @@ const CardProject = ({ dataProject }) => {
                 {
                   project.gestion.map((orga) => (
                     <div key={orga.id} >
-                      <p>Cette application a été développée en {orga.gestion}.</p>
+                      <p>Cette application a été développée en <strong>{orga.gestion}</strong> .</p>
                       <p dangerouslySetInnerHTML={{ __html: orga.description }} />
                     </div>
 
