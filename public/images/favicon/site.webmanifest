@@ -1,6 +1,7 @@
 {
     "name": "Portfolio Morgane Tressens",
     "short_name": "Portfolio",
+    "start_url": "https://morganetressens.com/",
     "icons": [
         {
             "src": "/images/favicon/android-chrome-192x192.png",
