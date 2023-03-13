@@ -15,32 +15,28 @@ const Profil = ({ file_data }) => {
           Mon parcours reste atypique, je suis partie de l’animation jeune public pour ensuite réaliser une très belle expérience en tant qu’assistante vétérinaire durant 14 années me permettant d’acquérir de la compétence telles que l’organisation, l’écoute, le conseil ainsi que des qualités relationnelles.<br />Je suis passionnée par la création de projets et toutes les couches qu’elle représente; ce qui me procure la joie de travailler chaque jour avec envie, motivation et des idées en mouvements permanents.
         </p>
         <AccordionPdf file_data={file_data[0]} />
-        <div>
-          <Accordion className={styles.file_pdf}>
-            <Accordion.Item eventKey="0" >
-              <Accordion.Header  >Visualisez mon titre professionel</Accordion.Header>
-              <Accordion.Body>
-                <Image
-                  src={diplome}
-                  alt="Obtention du titre professionel de niveau 5 développeur web & mobile"
-                  width='400'
-                  height='400' />
-              </Accordion.Body>
-            </Accordion.Item>
 
-          </Accordion>
-        </div>
       </div>
 
       <div className={styles.parcours}>
         <div className={styles.bloc}>
-          <div><h2> Une formation</h2>
+          <div><h2>Titre professionel niveau 5</h2>
+            <p>J'ai passé et obtenu mon titre professionel de développeur web et web mobile en Octobre 2022. <br />
+              Lors de ma formation, j'ai eu l'opportunité de développer les applications de la galerie d’art MYAS Gallery avec 5 étudiants de ma promotion.<br />
+              J'ai décidé de refaire l'intégralité de ce projet seule pour maitriser et optimiser le front développé en REACT et le back développé grâce à Symfony.
+            </p>
+            <Link href="/projets" passHref>
+              <a className={styles.pdffile} title='page des projets réalisés'>Projets réalisés</a>
+            </Link>
+
+          </div>
+          <div><h3 className={styles.title_p}> Une formation</h3>
             <p>
               En 2020, une grande décision qui a donné du sens à ce que je voulais réaliser pour mes futures années professionnelles, en commençant à découvrir le code et la programmation pour ainsi créer mes premières pages web.<br />
               Convaincue par l'appétence que je porte à cette nouvelle activité, j'entreprends les démarches pour intégrer une formation avec l'école O’clock. Le 7 Juin 2021, 9 a.m., j’embarque à bord de la promotion Valkyrie pour 24 semaines intenses dans l’apprentissage du développement web full stack.
             </p>
           </div>
-          <div><h3>SOCLE</h3>
+          <div><h3>Socle</h3>
             <p>
               Nous avons suivi cette formation en nous familiarisant avec l’environnement Linux et la ligne de commande. Chaque jour nous nous sommes confrontés à des challenges en réalisant une partie ou l'intégralité d'un projet en autonomie ainsi qu’en équipe. Pour fluidifier le travail de groupe, nous avons utilisé l’outil Git.
             </p>
@@ -71,16 +67,6 @@ const Profil = ({ file_data }) => {
             <p>Je me suis exercée sur la mise en place de tests unitaires pour un code robuste avec phpunit de symfony.</p>
           </div>
 
-          <div><h3>Titre professionel niveau 5</h3>
-            <p>J'ai passé et obtenu mon titre professionel de développeur web et web mobile en Octobre 2022. <br />
-              Lors de ma formation, j'ai eu l'opportunité de développer les applications de la galerie d’art MYAS Gallery avec 5 étudiants de ma promotion.<br />
-              J'ai décidé de refaire l'intégralité de ce projet seule pour maitriser et optimiser le front développé en REACT et le back développé grâce à Symfony.
-            </p>
-            <Link href="/projets" passHref>
-              <a className={styles.pdffile} title='page des projets réalisés'>Projets réalisés</a>
-            </Link>
-            
-          </div>
         </div>
         <div className={styles.bloc}>
           <h2>Soft skills</h2>

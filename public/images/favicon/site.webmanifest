@@ -1,19 +1,31 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Portfolio Morgane Tressens",
+    "short_name": "Portfolio",
     "icons": [
         {
-            "src": "/android-chrome-192x192.png",
+            "src": "/images/favicon/android-chrome-192x192.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/favicon/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/favicon/apple-touch-icon.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-384x384.png",
-            "sizes": "384x384",
-            "type": "image/png"
+            "src": "/images/favicon/maskable_icon_x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
         }
     ],
-    "theme_color": "#ffffff",
+    "theme_color": "#A17715",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "standalone",
+    "description": "Je suis développeuse web & web mobile. Mon intérêt pour le design, l’architecture, l’expérience utilisateur et la programmation me pousse à me diversifier un maximum pour concevoir et réaliser des sites web du cahier des charges à la mise en ligne. Je suis prête à participer à la réalisation de vos projets."
 }

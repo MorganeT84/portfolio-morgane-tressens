@@ -7,7 +7,7 @@ const LegalNotice = () => (
     <article className={styles.detail}>
       <h2>Conditions générales</h2>
       <p>
-        Les présentes conditions générales fixent les modalités d’utilisation du site <spans>https://portfolio-morgane-tressens.vercel.app/</spans>.<br />
+        Les présentes conditions générales fixent les modalités d’utilisation du site <spans>https://morganetressens.com/</spans>.<br />
         L’utilisateur reconnait en avoir pris connaissance et les accepter.
       </p>
       <ul>
@@ -18,8 +18,9 @@ const LegalNotice = () => (
         <li>
           <p>Hébergement :</p>
           <p>
-            Ce site est hébergé par Vercel.<br />
-            https://vercel.com/.
+            Ce site est hébergé par Hostinger.<br />
+            Siège social : HOSTINGER INTERNATIONAL LTD, 61 Lordou Vironos Street, 6023 Larnaca, Chypre,<br />
+            joignable par le moyen suivant :https://www.hostinger.fr/contact.
           </p>
         </li>
         <li>
