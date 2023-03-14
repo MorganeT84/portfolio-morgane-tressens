@@ -7,7 +7,7 @@ const LegalNotice = () => (
     <article className={styles.detail}>
       <h2>Conditions générales</h2>
       <p>
-        Les présentes conditions générales fixent les modalités d’utilisation du site <spans>https://morganetressens.com/</spans>.<br />
+        Les présentes conditions générales fixent les modalités d’utilisation du site <spans>https://www.morganetressens.com/</spans>.<br />
         L’utilisateur reconnait en avoir pris connaissance et les accepter.
       </p>
       <ul>
