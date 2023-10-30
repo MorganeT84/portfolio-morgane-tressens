@@ -3,7 +3,12 @@ import AccordionPdf from './AccordionPdf/index';
 import { Accordion } from 'react-bootstrap';
 import Image from 'next/image';
 
-import diplome from '../../public/download/diplome.png'
+import MG from '../../public/images/myasgallery.png';
+import Equance from '../../public/images/equance.png';
+import therapeute from '../../public/images/therapeute.png';
+
+
+
 import Link from 'next/link';
 const Profil = ({ file_data }) => {
 
@@ -17,56 +22,143 @@ const Profil = ({ file_data }) => {
         <AccordionPdf file_data={file_data[0]} />
 
       </div>
+      <div className={styles.bloc}>
+        <div>
+          <h2>Expériences professionnelles</h2>
+          <div className={styles.timeline_container}>
+            <ul className={styles.timeline}>
+              <li className={styles.timeline_item}>
+                <div className={styles.indicator}>
+                  <div className={styles.inner_dot}></div>
+                </div>
+                <div className={styles.event}>
+                  <div className={styles.icon_container}>
+                    <Image
+                      src={Equance}
+                      alt="logo Equance"
+                      width='35'
+                      height='35'
+                    />                  </div>
+                  <div className={styles.description_container}>
+                    <h4>Equance - Développeuse Full stack</h4>
+                    <date>Avril 2023 - Aujourd'hui</date>
+                    <ul>
+                      <li>Création nouvelles fonctionnalités</li>
+                      <li>Maintenance et amélioration fonctionnalités existantes</li>
+                      <li>Git master</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
 
+              <li className={styles.timeline_item}>
+                <div className={styles.indicator}>
+                  <div className={styles.inner_dot}></div>
+                </div>
+                <div className={styles.event}>
+                  <div className={styles.icon_container}>
+                    <Image
+                      src={MG}
+                      alt="logo Galerie d'art Myas gallery"
+                      width='35'
+                      height='35'
+                    />                    </div>
+                  <div className={styles.description_container}>
+                    <h4>Myas Gallery - Développeuse Full stack</h4>
+                    <date>2022 - 2023</date>
+                    <ul>
+                      <li>Création du projet, cachier des charges</li>
+                      <li>Création de sites vitrines / Référencement / Accessibilité</li>
+                      <li>Création d’une API</li>
+                      <li>Mise en place d’un back office pour la gestion du site</li>
+                      <li>Maintenance</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li className={styles.timeline_item}>
+                <div className={styles.indicator}>
+                  <div className={styles.inner_dot}></div>
+                </div>
+                <div className={styles.event}>
+                  <div className={styles.icon_container}>
+                    <Image
+                      src={therapeute}
+                      alt="logo therapeute"
+                      width='35'
+                      height='35'
+                    />
+                  </div>
+                  <div className={styles.description_container}>
+                    <h4>Site vitrine thérapeute - Développeuse Full stack</h4>
+                    <date>2022 - 2023</date>
+                    <ul>
+                      <li>Création du projet, cachier des charges</li>
+                      <li>Création de sites vitrines / Référencement / Accessibilité</li>
+                      <li>Maintenance</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
       <div className={styles.parcours}>
         <div className={styles.bloc}>
-          <div><h2>Titre professionel niveau 5</h2>
-            <p>J'ai passé et obtenu mon titre professionel de développeur web et web mobile en Octobre 2022. <br />
-              Lors de ma formation, j'ai eu l'opportunité de développer les applications de la galerie d’art MYAS Gallery avec 5 étudiants de ma promotion.<br />
-              J'ai décidé de refaire l'intégralité de ce projet seule pour maitriser et optimiser le front développé en REACT et le back développé grâce à Symfony.
-            </p>
-            <Link href="/projets" passHref>
-              <a className={styles.pdffile} title='page des projets réalisés'>Projets réalisés</a>
-            </Link>
-
-          </div>
-          <div><h3 className={styles.title_p}> Une formation</h3>
-            <p>
-              En 2020, une grande décision qui a donné du sens à ce que je voulais réaliser pour mes futures années professionnelles, en commençant à découvrir le code et la programmation pour ainsi créer mes premières pages web.<br />
-              Convaincue par l'appétence que je porte à cette nouvelle activité, j'entreprends les démarches pour intégrer une formation avec l'école O’clock. Le 7 Juin 2021, 9 a.m., j’embarque à bord de la promotion Valkyrie pour 24 semaines intenses dans l’apprentissage du développement web full stack.
-            </p>
-          </div>
-          <div><h3>Socle</h3>
-            <p>
-              Nous avons suivi cette formation en nous familiarisant avec l’environnement Linux et la ligne de commande. Chaque jour nous nous sommes confrontés à des challenges en réalisant une partie ou l'intégralité d'un projet en autonomie ainsi qu’en équipe. Pour fluidifier le travail de groupe, nous avons utilisé l’outil Git.
-            </p>
-            <p>
-              Le point de départ  de cet apprentissage commence par la manipulation du html et css pour réaliser une interface statique et responsive à partir d’une maquette que nous apprendrons aussi à concrétiser.<br />
-              Nous avons travaillé JavaScript vanilla pour façonner l’expérience utilisateur, en créant de l’interactivité sur nos pages. <br />
-              Ensuite nous avons abordé la programmation avec PHP pour faire vivre une page web de manière dynamique et fonctionnelle avec la programmation Orientée Objet. Nous avons appris la gestion des bases de données (MySQL), structurer une application, modéliser et organiser des données. Nous avons suivi le modèle MVC pour l'architecture de nos applications. Nous avons mis en place des infrastructures techniques d’administration sécurisées.
-            </p>
-          </div>
-          <div><h3>React</h3>
-            <p>
-              Au début de ma formation, j’étais débutante, le côté front d’une application était plus concret à mes yeux, puis j’ai découvert PHP et mon choix d’une spécialisation pour conclure ma formation a été un dilemme… Je décide d’aller au bout de mon idée en commençant par apprendre cette bibliothèque Javascript.
-            </p>
-            <p>
-              Pour commencer nous avons travaillé sur les principes de la programmation fonctionnelle et déclarative.
-              Nous avons étudié une architecture de composants réutilisables et paramétrables pour établir la base d’une application React via les différentes manières d’écrire nos composants (orientée objet en classes ou une approche fonctionnelle avec les hooks).<br />
-              Pour établir des requêtes HTTP en Ajax dans nos applications vers une API, nous avons appris à utiliser la bibliothèque Axios, à manipuler la bibliothèque Redux pour gérer la manipulation du DOM et son état.
-            </p>
-          </div>
-          <div><h3>Symfony</h3>
-            <p>Fin de cette belle aventure au sein de l'école O'clock.<br />
-              Je décide, quelques mois plus tard, de me former sur ce framework PHP, en autonomie via les fiches récapitulatives des notions, les challenges de l'école et la documentation Symfony.<br />
-              J’ai étudié les bases de Symfony en créant des projets avec symfony/skeleton, en manipulant les routes, les contrôleurs, les templates (Twig et Bootstrap) et les formulaires.<br />
-              J’ai utilisé Doctrine pour la création, les associations et la manipulation de la base de données. J’ai appris à créer des fixtures pour alimenter une base en données factices avec Faker et Nelmio/alice.</p>
-            <p>Côté sécurisation d’une application, j’ai appris à mettre en place des conditions d’affichage selon le rôle de l’utilisateur connecté en passant par la création d’un utilisateur, la définition de son rôle et l’encodage du mot de passe.</p>
-            <p>J’ai mis en place la configuration de services réutilisables  et la création de commandes personnalisées pour ajouter des fonctionnalités dans la manipulation des données.</p>
-            <p>Les notions d'événements et cycles de vie permettent d’entrer en interaction avec un formulaire et pouvoir faire exécuter du code selon l’état.</p>
-            <p>Je me suis exercée sur la mise en place de tests unitaires pour un code robuste avec phpunit de symfony.</p>
-          </div>
-
+          <Accordion  >
+            <Accordion.Header >
+              <div><h2>Titre professionel niveau 5</h2>
+                <p>J'ai passé et obtenu mon titre professionel de développeur web et web mobile en Octobre 2022. <br />
+                  Lors de ma formation, j'ai eu l'opportunité de développer les applications de la galerie d’art MYAS Gallery avec 5 étudiants de ma promotion.<br />
+                  J'ai décidé de refaire l'intégralité de ce projet seule pour maitriser et optimiser le front développé en REACT et le back développé grâce à Symfony.
+                </p>
+                <Link href="/projets" passHref>
+                  <a className={styles.pdffile} title='page des projets réalisés'>Projets réalisés</a>
+                </Link>
+              </div>
+            </Accordion.Header>
+            <Accordion.Body>
+              <div><h3 className={styles.title_p}> Une formation</h3>
+                <p>
+                  En 2020, une grande décision qui a donné du sens à ce que je voulais réaliser pour mes futures années professionnelles, en commençant à découvrir le code et la programmation pour ainsi créer mes premières pages web.<br />
+                  Convaincue par l'appétence que je porte à cette nouvelle activité, j'entreprends les démarches pour intégrer une formation avec l'école O’clock. Le 7 Juin 2021, 9 a.m., j’embarque à bord de la promotion Valkyrie pour 24 semaines intenses dans l’apprentissage du développement web full stack.
+                </p>
+              </div>
+              <div><h3>Socle</h3>
+                <p>
+                  Nous avons suivi cette formation en nous familiarisant avec l’environnement Linux et la ligne de commande. Chaque jour nous nous sommes confrontés à des challenges en réalisant une partie ou l'intégralité d'un projet en autonomie ainsi qu’en équipe. Pour fluidifier le travail de groupe, nous avons utilisé l’outil Git.
+                </p>
+                <p>
+                  Le point de départ  de cet apprentissage commence par la manipulation du html et css pour réaliser une interface statique et responsive à partir d’une maquette que nous apprendrons aussi à concrétiser.<br />
+                  Nous avons travaillé JavaScript vanilla pour façonner l’expérience utilisateur, en créant de l’interactivité sur nos pages. <br />
+                  Ensuite nous avons abordé la programmation avec PHP pour faire vivre une page web de manière dynamique et fonctionnelle avec la programmation Orientée Objet. Nous avons appris la gestion des bases de données (MySQL), structurer une application, modéliser et organiser des données. Nous avons suivi le modèle MVC pour l'architecture de nos applications. Nous avons mis en place des infrastructures techniques d’administration sécurisées.
+                </p>
+              </div>
+              <div><h3>React</h3>
+                <p>
+                  Au début de ma formation, j’étais débutante, le côté front d’une application était plus concret à mes yeux, puis j’ai découvert PHP et mon choix d’une spécialisation pour conclure ma formation a été un dilemme… Je décide d’aller au bout de mon idée en commençant par apprendre cette bibliothèque Javascript.
+                </p>
+                <p>
+                  Pour commencer nous avons travaillé sur les principes de la programmation fonctionnelle et déclarative.
+                  Nous avons étudié une architecture de composants réutilisables et paramétrables pour établir la base d’une application React via les différentes manières d’écrire nos composants (orientée objet en classes ou une approche fonctionnelle avec les hooks).<br />
+                  Pour établir des requêtes HTTP en Ajax dans nos applications vers une API, nous avons appris à utiliser la bibliothèque Axios, à manipuler la bibliothèque Redux pour gérer la manipulation du DOM et son état.
+                </p>
+              </div>
+              <div><h3>Symfony</h3>
+                <p>Fin de cette belle aventure au sein de l'école O'clock.<br />
+                  Je décide, quelques mois plus tard, de me former sur ce framework PHP, en autonomie via les fiches récapitulatives des notions, les challenges de l'école et la documentation Symfony.<br />
+                  J’ai étudié les bases de Symfony en créant des projets avec symfony/skeleton, en manipulant les routes, les contrôleurs, les templates (Twig et Bootstrap) et les formulaires.<br />
+                  J’ai utilisé Doctrine pour la création, les associations et la manipulation de la base de données. J’ai appris à créer des fixtures pour alimenter une base en données factices avec Faker et Nelmio/alice.</p>
+                <p>Côté sécurisation d’une application, j’ai appris à mettre en place des conditions d’affichage selon le rôle de l’utilisateur connecté en passant par la création d’un utilisateur, la définition de son rôle et l’encodage du mot de passe.</p>
+                <p>J’ai mis en place la configuration de services réutilisables  et la création de commandes personnalisées pour ajouter des fonctionnalités dans la manipulation des données.</p>
+                <p>Les notions d'événements et cycles de vie permettent d’entrer en interaction avec un formulaire et pouvoir faire exécuter du code selon l’état.</p>
+                <p>Je me suis exercée sur la mise en place de tests unitaires pour un code robuste avec phpunit de symfony.</p>
+              </div>
+            </Accordion.Body>
+          </Accordion>
         </div>
         <div className={styles.bloc}>
           <h2>Soft skills</h2>

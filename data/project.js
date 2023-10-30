@@ -143,63 +143,7 @@ const techno = [
     ],
     url: "https://christinetoledo.fr/"
   },
-  {
-    id: 3,
-    name: "Isabelle Hominal",
-    text: "Bien-être et massages",
-    logo: "/images/logo-isa.png",
-    description: "Site vitrine pour une nouvelle activité de massage ...",
-    objectifs: "En cours de réalisation du cahier des charges.",
-    role: "Cette application est libre d’accès, aucune authentification n'est nécessaire pour naviguer sur le site.",
-    techno_front: [
-      {
-        id: 1,
-        name: "HTML/JSX",
-      },
-      {
-        id: 2,
-        name: "CSS / SCSS",
-      },
-      {
-        id: 3,
-        name: "React",
-      },
-      {
-        id: 4,
-        name: "NextJs",
-      }
-    ],
-    techno_back: [
-      {
-        id: 1,
-        name: "Node > serveur pour la récupération des données du formulaire de contact",
-      },
-      {
-        id: 2,
-        name: "dotenv > utilisation des mots de passe sécurisé",
-      },
-      {
-        id: 3,
-        name: "Nodemailer > pour l'envoie des données du formulaire sur l'adresse mail du client",
-      },
-    ],
-    gestion: [
-      {
-        id: 1,
-        gestion: "autonomie",
-        description: "En cours de réalisation du cahier des charges."
-      }
-    ],
-    deployement: [
-      {
-        id: 1,
-        type: "VPS",
-        name: "Hostinger",
-        description:"à venir"
-      }
-    ],
-    url: "#"
-  }
+   
 ]
 
 export default techno;
