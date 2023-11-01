@@ -2,14 +2,14 @@ const techno = [
   {
     id: 1,
     name: "HTML5",
-    text: "intégration, référencement, accessibilité",
+    text: "Intégration, référencement, accessibilité",
     photoUrl: "/images/techno/html5.png",
 
   },
   {
     id: 2,
     name: "CSS/SCSS",
-    text: "mise en page",
+    text: "Mise en page",
     photoUrl: "/images/techno/sass.png",
   },
   {
@@ -27,7 +27,7 @@ const techno = [
   {
     id: 5,
     name: "VueJS",
-    text: "framework JavaScrip",
+    text: "Framework JavaScrip",
     photoUrl: "/images/techno/vuejs.png",
   },
   {
@@ -57,7 +57,7 @@ const techno = [
   {
     id: 10,
     name: "Nodejs",
-    text: "manipulation de node dans le framework Next.js (nodemailer)",
+    text: "Manipulation de node dans le framework Next.js (nodemailer)",
     photoUrl: "/images/techno/nodejs.png",
   },
   {
@@ -81,7 +81,7 @@ const techno = [
   {
     id: 14,
     name: "Apache",
-    text: "serveur web",
+    text: "Serveur web",
     photoUrl: "/images/techno/apache.png",
   },
   {
@@ -91,9 +91,9 @@ const techno = [
     photoUrl: "/images/techno/nginx.png",
   },
   {
-    id: 15,
+    id: 16,
     name: "Kubuntu",
-    text: "système d'exploitation Linux",
+    text: "Système d'exploitation Linux",
     photoUrl: "/images/techno/kubuntu.png",
   }
 ]

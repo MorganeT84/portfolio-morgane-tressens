@@ -21,8 +21,8 @@ const Home = () => (
       <Image
         src={ProfilPicture}
         alt="photographie profil de Morgane Tressens"
-        width='600'
-        height='450'
+        width='300'
+        height='200'
       />
     </div>
     <h1>Développeuse web & mobile <br/> Morgane Tressens</h1>

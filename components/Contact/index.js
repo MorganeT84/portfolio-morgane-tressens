@@ -67,13 +67,13 @@ const Contact = () => {
         <h1>Contactez-moi</h1>
         <div className={styles.contact_info}>
           <p className={styles.adress}>
-            <span>66000 Perpignan</span> - <span>France</span>
+            <span>34 090 Montpellier</span> - <span>France</span>
           </p>
           <p className={styles.phone}>
-            <a href="+33619068284" title="téléphone" className={styles.phone_number}>+33 623 618 830</a>
+            <a href="tel:+33619068284" title="téléphone" className={styles.phone_number}>+33 623 618 830</a>
           </p>
           <p className={styles.mail}>
-            <a href="morganetressens@gmail.com" title="email" className={styles.email}>morganetressens@gmail.com</a>
+            <a href="mailto:morganetressens@gmail.com" title="email" className={styles.email}>morganetressens@gmail.com</a>
           </p>
         </div>
 
@@ -109,10 +109,6 @@ const Contact = () => {
     </div>
 
   );
-
-
 };
-
-
-
+ 
 export default Contact;

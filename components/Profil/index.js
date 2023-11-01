@@ -43,8 +43,8 @@ const Profil = ({ file_data }) => {
                     <h4>Equance - Développeuse Full stack</h4>
                     <date>Avril 2023 - Aujourd'hui</date>
                     <ul>
-                      <li>Création nouvelles fonctionnalités</li>
-                      <li>Maintenance et amélioration fonctionnalités existantes</li>
+                      <li>Création de nouvelles fonctionnalités</li>
+                      <li>Maintenance et amélioration des fonctionnalités existantes</li>
                       <li>Git master</li>
                     </ul>
                   </div>
@@ -67,7 +67,7 @@ const Profil = ({ file_data }) => {
                     <h4>Myas Gallery - Développeuse Full stack</h4>
                     <date>2022 - 2023</date>
                     <ul>
-                      <li>Création du projet, cachier des charges</li>
+                      <li>Création du projet et rédaction du cachier des charges</li>
                       <li>Création de sites vitrines / Référencement / Accessibilité</li>
                       <li>Création d’une API</li>
                       <li>Mise en place d’un back office pour la gestion du site</li>
@@ -94,7 +94,7 @@ const Profil = ({ file_data }) => {
                     <h4>Site vitrine thérapeute - Développeuse Full stack</h4>
                     <date>2022 - 2023</date>
                     <ul>
-                      <li>Création du projet, cachier des charges</li>
+                      <li>Création du projet et rédaction du cachier des charges</li>
                       <li>Création de sites vitrines / Référencement / Accessibilité</li>
                       <li>Maintenance</li>
                     </ul>
@@ -108,16 +108,15 @@ const Profil = ({ file_data }) => {
       </div>
       <div className={styles.parcours}>
         <div className={styles.bloc}>
+          <h2>Titre professionel niveau 5</h2>
+          <p>J'ai passé et obtenu mon titre professionel de développeur web et web mobile en Octobre 2022. <br />
+            Lors de ma formation, j'ai eu l'opportunité de développer les applications de la galerie d’art MYAS Gallery avec 5 étudiants de ma promotion.<br />
+            J'ai décidé de refaire l'intégralité de ce projet seule pour maitriser et optimiser le front développé en REACT et le back développé grâce à Symfony.
+          </p>
           <Accordion  >
             <Accordion.Header >
-              <div><h2>Titre professionel niveau 5</h2>
-                <p>J'ai passé et obtenu mon titre professionel de développeur web et web mobile en Octobre 2022. <br />
-                  Lors de ma formation, j'ai eu l'opportunité de développer les applications de la galerie d’art MYAS Gallery avec 5 étudiants de ma promotion.<br />
-                  J'ai décidé de refaire l'intégralité de ce projet seule pour maitriser et optimiser le front développé en REACT et le back développé grâce à Symfony.
-                </p>
-                <Link href="/projets" passHref>
-                  <a className={styles.pdffile} title='page des projets réalisés'>Projets réalisés</a>
-                </Link>
+              <div>
+                Détails ...
               </div>
             </Accordion.Header>
             <Accordion.Body>
@@ -156,6 +155,11 @@ const Profil = ({ file_data }) => {
                 <p>J’ai mis en place la configuration de services réutilisables  et la création de commandes personnalisées pour ajouter des fonctionnalités dans la manipulation des données.</p>
                 <p>Les notions d'événements et cycles de vie permettent d’entrer en interaction avec un formulaire et pouvoir faire exécuter du code selon l’état.</p>
                 <p>Je me suis exercée sur la mise en place de tests unitaires pour un code robuste avec phpunit de symfony.</p>
+              </div>
+              <div>
+              <Link href="/projets" passHref>
+                  <a className={styles.pdffile} title='page des projets réalisés'>Projets réalisés</a>
+                </Link>
               </div>
             </Accordion.Body>
           </Accordion>
